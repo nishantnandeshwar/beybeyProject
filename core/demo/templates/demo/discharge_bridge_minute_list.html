@@ -1,0 +1,15 @@
+<!-- templates/app_name/discharge_bridge_minute_list.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Discharge Bridge Minutes</title>
+</head>
+<body>
+    <h1>Discharge Bridge Minutes</h1>
+    <ul>
+        {% for discharge_bridge_minute in discharge_bridge_minutes %}
+            <li>{{ discharge_bridge_minute.timestamp }} - Record #{{ discharge_bridge_minute.record }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
